@@ -1,0 +1,107 @@
+/*
+ * App Global CSS
+ * ----------------------------------------------------------------------------
+ * Put style rules here that you want to apply globally. These styles are for
+ * the entire app and not just one component. Additionally, this file can be
+ * used as an entry point to import other CSS/Sass files to be included in the
+ * output CSS.
+ * For more information on global stylesheets, visit the documentation:
+ * https://ionicframework.com/docs/layout/global-stylesheets
+ */
+
+/* Core CSS required for Ionic components to work properly */
+@import "~@ionic/angular/css/core.css";
+
+/* Basic CSS for apps built with Ionic */
+@import "~@ionic/angular/css/normalize.css";
+@import "~@ionic/angular/css/structure.css";
+@import "~@ionic/angular/css/typography.css";
+@import '~@ionic/angular/css/display.css';
+
+/* Optional CSS utils that can be commented out */
+@import "~@ionic/angular/css/padding.css";
+@import "~@ionic/angular/css/float-elements.css";
+@import "~@ionic/angular/css/text-alignment.css";
+@import "~@ionic/angular/css/text-transformation.css";
+@import "~@ionic/angular/css/flex-utils.css";
+
+
+
+
+/* Login page  */
+
+.login-wrap { 
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-box {
+    min-width: 250px;
+    height: 400px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px #cfcfcf;
+    overflow: hidden;
+}
+
+.login-logo {
+    width: 100%;
+    height: 50%;
+    background: #009688;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-logo i {
+    font-size: 100px;
+    color: #fff;
+}
+
+.login-form {
+    height: 50%;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-form span {
+    border-bottom: 1px solid #222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+}
+
+
+.finger-print-icon{
+    width: 150px;
+    height: 150px;
+    color: #fff;
+}
+ 
+
+.login-form ion-icon{
+    font-size: 25px;
+    color: #222;
+}
+
+.apmnt-card ion-icon{
+    font-size: 40px
+}
+
+.apmnt-card ion-icon.accept{
+    color: #28a745;
+}
+
+.apmnt-card ion-icon.reject{
+    color: #dc3545;
+}
+
+.top-header{
+    font-size: 20px;
+}
+ 

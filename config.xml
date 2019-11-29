@@ -1,0 +1,5 @@
+<?xml version='1.0' encoding='utf-8'?>
+<feature name="Calendar">
+    <param name="ios-package" value="Calendar" />
+    <content src="index.html" />
+</feature>

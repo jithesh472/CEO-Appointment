@@ -1,0 +1,19 @@
+<ion-content>
+  <div class="container apmnt-card">
+    <div class="text-primary top-header py-2 mt-5 border-bottom mb-3"> Waiting for Approval</div>
+
+    <div class="card mb-2 ion-activatable" (click)="showDetail(ap)" *ngFor="let ap of waitingApproval">
+      <div class="card-body">
+        <h4 class="card-title">{{ap.bookedBy}}</h4>
+        <div class="card-subtitle text-muted">{{ap.date | date:'mediumDate'}} @ {{ap.startTime}} <span
+            class="float-right">
+            <ion-icon class="accept" name="checkmark-circle" (click)="acceptApmnt(ap, 'T')"></ion-icon>
+            <ion-icon class="reject" name="close-circle" (click)="acceptApmnt(ap, 'F')"></ion-icon>
+          </span></div>
+        <div class="card-text">{{ap.purpose}} </div>
+      </div>
+      <ion-ripple-effect></ion-ripple-effect>
+    </div>
+    <img class="text-center" *ngIf="waitingApproval.length ==0" src="../../assets/images/hugo-waiting.png" alt="">
+  </div>
+</ion-content>

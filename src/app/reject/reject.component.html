@@ -1,0 +1,15 @@
+<ion-content>
+    <div class="container apmnt-card">
+       <div class="text-primary top-header py-2 mt-5 border-bottom mb-3">  Rejected</div> 
+      <div class="card mb-2" *ngFor="let rej of rejected">
+        <div class="card-body">
+          <h4 class="card-title">{{rej.bookedBy}}</h4>
+          <div class="card-subtitle text-muted">{{rej.date | date:'mediumDate'}}  @ {{rej.startTime}} <span class="float-right">
+              <button class="btn btn-danger">Rejected</button>
+            </span></div>
+          <div class="card-text"> {{rej.purpose}} </div>
+        </div>
+      </div>
+      
+    </div>
+  </ion-content>

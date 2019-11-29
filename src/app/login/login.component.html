@@ -1,0 +1,16 @@
+  <div class="login-wrap">
+    <form action="" #loginForm="ngForm" (submit)="onSubmit()" novalidate>
+      <img src="../../assets/images/Girmiti.png" alt="">
+
+      <div class="form-group mt-5">
+        <label for="">User Name</label>
+        <input type="text" name="userName" ngModel class="form-control">
+      </div>
+      <div class="form-group">
+        <label for="">Password</label>
+        <input type="password" name="password"  ngModel class="form-control">
+      </div>
+
+      <button type="submit" class="ion-activatable btn btn-primary w-100">Submit<ion-ripple-effect></ion-ripple-effect></button>
+    </form>
+  </div>

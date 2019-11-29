@@ -1,0 +1,16 @@
+<ion-content>
+  <div class="container apmnt-card" >
+    <div class="text-primary top-header py-2 mt-5 border-bottom mb-3"> Accepted</div>
+    <div class="card mb-2" *ngFor="let acpt of accpted">
+      <div class="card-body" >
+        <h4 class="card-title">{{acpt.bookedBy}}</h4>
+        <div class="card-subtitle text-muted">{{acpt.date | date:'mediumDate'}}  @ {{acpt.startTime}} <span class="float-right" > 
+            <button class="btn btn-success" >Accepted</button> 
+
+          </span></div>
+        <div class="card-text">{{acpt.purpose}}</div>
+      </div>
+    </div>
+
+  </div>
+</ion-content>
