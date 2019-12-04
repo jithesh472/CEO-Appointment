@@ -6,14 +6,11 @@
       </ion-toolbar>
     </ion-header>
     <ion-content>
-      <ion-list>
-        <ion-item>Pending Appointments</ion-item>
-        <ion-item>Upcoming Appointments</ion-item>
-        <ion-item>Book Board Room</ion-item>
-      </ion-list>
+      <ng-material-multilevel-menu [configuration]='config' [items]='appitems' (selectedItem)="selectedItem($event)">
+      </ng-material-multilevel-menu>    
     </ion-content>
   </ion-menu>
-  <ion-header *ngIf="router.url != '/login'"> 
+  <ion-header *ngIf="router.url != '/login'">
     <ion-toolbar>
       <ion-title>CEO Appointments</ion-title>
       <ion-buttons slot="start">

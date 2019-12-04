@@ -1,7 +1,7 @@
 import { Component, OnInit, ViewChild, LOCALE_ID, Inject } from '@angular/core';
 import { Router, ActivatedRoute } from '@angular/router';
 import { AlertController, ToastController } from '@ionic/angular';
-import { ApiService } from '../services/api.service';
+import { ApiService } from '../../services/api.service';
 import { CalendarComponent } from 'ionic2-calendar/calendar';
 import { formatDate } from '@angular/common';
 
@@ -11,7 +11,7 @@ declare var require: any;
   templateUrl: './home.component.html',
   styles: []
 })
-export class HomeComponent implements OnInit {
+export class AppointmentHomeComponent implements OnInit {
 
   
   event = {

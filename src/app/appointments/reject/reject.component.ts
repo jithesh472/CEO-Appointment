@@ -1,14 +1,14 @@
 import { Component, OnInit } from '@angular/core';
-import { AppointmentModal } from '../modals/apmnt.modal';
-import { ApiService } from '../services/api.service';
-import { FilterApprovalService } from '../services/filter-approval.service';
+import { AppointmentModal } from '../../modals/apmnt.modal';
+import { ApiService } from '../../services/api.service';
+import { FilterApprovalService } from '../../services/filter-approval.service';
 
 @Component({
   selector: 'app-reject',
   templateUrl: './reject.component.html',
   styleUrls: ['./reject.component.scss'],
 })
-export class RejectComponent implements OnInit {
+export class AppointmentRejectComponent implements OnInit {
 
   rejected: AppointmentModal[] = [];
 

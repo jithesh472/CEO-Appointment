@@ -10,32 +10,32 @@ import { StatusBar } from '@ionic-native/status-bar/ngx';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { LoginComponent } from './login/login.component';
-import { AppointmentSchedularComponent } from './appointment-schedular/appointment-schedular.component';
 import { FormsModule } from '@angular/forms';
-import { SchedularComponent } from './schedular/schedular.component';
-import { AcceptComponent } from './accept/accept.component';
-import { RejectComponent } from './reject/reject.component';
-import { HomeComponent } from './home/home.component';
-import { NgCalendarModule  } from 'ionic2-calendar';
+import { AppointmentAcceptComponent } from './appointments/accept/accept.component';
+import { AppointmentRejectComponent } from './appointments/reject/reject.component';
+import { AppointmentHomeComponent } from './appointments/home/home.component';
+import { NgCalendarModule } from 'ionic2-calendar';
+import { NgMaterialMultilevelMenuModule } from 'ng-material-multilevel-menu';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
-    AppComponent, 
-    LoginComponent, 
-    AppointmentSchedularComponent, 
-    SchedularComponent, 
-    AcceptComponent, 
-    RejectComponent,
-    HomeComponent
+    AppComponent,
+    LoginComponent,
+    AppointmentHomeComponent,
+    AppointmentRejectComponent,
+    AppointmentAcceptComponent
   ],
   entryComponents: [],
   imports: [
-    BrowserModule, 
-    HttpClientModule, 
-    IonicModule.forRoot(), 
-    AppRoutingModule, 
+    BrowserModule,
+    HttpClientModule,
+    IonicModule.forRoot(),
+    AppRoutingModule,
     FormsModule,
-    NgCalendarModule
+    NgCalendarModule,
+    NgMaterialMultilevelMenuModule,
+    BrowserAnimationsModule
   ],
   providers: [
     StatusBar,
@@ -44,4 +44,4 @@ import { NgCalendarModule  } from 'ionic2-calendar';
   ],
   bootstrap: [AppComponent]
 })
-export class AppModule {}
+export class AppModule { }

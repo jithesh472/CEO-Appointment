@@ -1,13 +1,13 @@
 import { Component, OnInit } from '@angular/core';
-import { AppointmentModal } from '../modals/apmnt.modal';
-import { ApiService } from '../services/api.service';
+import { AppointmentModal } from '../../modals/apmnt.modal';
+import { ApiService } from '../../services/api.service';
 
 @Component({
   selector: 'app-accept',
   templateUrl: './accept.component.html',
   styleUrls: ['./accept.component.scss'],
 })
-export class AcceptComponent implements OnInit {
+export class AppointmentAcceptComponent implements OnInit {
   accpted: AppointmentModal[]=[];
   constructor(public api: ApiService) { }
 

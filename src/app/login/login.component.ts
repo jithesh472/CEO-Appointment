@@ -35,7 +35,7 @@ export class LoginComponent implements OnInit {
         }
         if (isFetched) {
           // this.presentToast().then(() => { this.form.reset(); this.route.navigate(['/apmnt-schedular']) });
-          this.presentToast().then(() => { this.form.reset(); this.route.navigate(['/home']) });
+          this.presentToast().then(() => { this.form.reset(); this.route.navigate(['/appointment/home']) });
         } else {
           this.errorToast();
         }
